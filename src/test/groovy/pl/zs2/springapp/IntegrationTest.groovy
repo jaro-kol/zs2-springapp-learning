@@ -8,6 +8,7 @@ import spock.lang.Shared
 import spock.lang.Specification
 
 @SpringBootTest(classes = [SpringApp],
+        properties = "application.environment=test",
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class IntegrationTest extends Specification {
 
